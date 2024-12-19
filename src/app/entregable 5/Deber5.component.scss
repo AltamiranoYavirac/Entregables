@@ -1,7 +1,7 @@
 .product-item {
   position: relative;
   padding: 16px;
-  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente */
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -11,7 +11,7 @@
   justify-content: space-between;
   margin: 0 8px; /* Espaciado entre las tarjetas */
 
-  color: white; /* Cambia el texto a color blanco */
+  color: rgb(0, 0, 0); /* Cambia el texto a color blanco */
 
   button {
     width: 100%;
@@ -24,7 +24,7 @@
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   /* Efecto hover para la tarjeta */
@@ -53,14 +53,14 @@
     h4 {
       font-size: 1.25rem; /* 20px */
       font-weight: 600;
-      color: white; /* Asegura que el texto del título sea blanco */
+      color: rgb(0, 0, 0); /* Asegura que el texto del título sea blanco */
       margin-bottom: 0.5rem;
       line-height: 1.2;
     }
 
-    p {
+    p-button {
       font-size: 1rem; /* 16px */
-      color: white; /* Asegura que el texto de los detalles sea blanco */
+      color: rgb(0, 0, 0); /* Asegura que el texto de los detalles sea blanco */
       margin-bottom: 1rem;
     }
 
@@ -68,29 +68,29 @@
       margin-bottom: 1rem;
 
       &::ng-deep {
-        color: white !important; /* Asegura que las etiquetas sean blancas */
+        color: rgb(0, 0, 0) !important; /* Asegura que las etiquetas sean blancas */
       }
     }
 
     /* Contenedor de botones alineado */
     .button-container {
       display: flex;
-      justify-content: center; /* Alinea los botones al centro */
+      justify-content: flex-end; /* Alinea los botones al centro */
       gap: 10px;
 
       .p-button {
         margin-top: 0.5rem;
         padding: 10px;
         font-size: 1rem;
-        color: white; /* Botones con texto blanco */
+        color: rgb(0, 0, 0); /* Botones con texto blanco */
         border-radius: 25px;
-        background-color: #4299e1;
+        background-color: #000000;
         transition: background-color 0.2s ease;
 
         &.p-button-outlined {
           background-color: transparent;
-          border: 2px solid white; /* Botones con borde blanco */
-          color: white;
+          border: 2px solid rgb(0, 0, 0); /* Botones con borde blanco */
+          color: rgb(0, 0, 0);
         }
 
         &.p-button-rounded {
@@ -98,8 +98,8 @@
         }
 
         &:hover {
-          background-color: #3182ce;
-          border-color: #3182ce;
+          background-color: #000000;
+          border-color: #000000;
         }
       }
 
@@ -113,7 +113,7 @@
       justify-content: center; /* Alinea el texto al centro */
       margin-top: 10px;
       font-weight: bold;
-      color: white; /* Estado de inventario en blanco */
+      color: rgb(7, 7, 7); /* Estado de inventario en blanco */
       font-size: 1rem;
     }
   }
@@ -141,14 +141,14 @@
 /* Botones del carrusel */
 .p-carousel .p-carousel-prev,
 .p-carousel .p-carousel-next {
-  color: white; /* Botones de navegación blancos */
+  color: rgb(0, 0, 0); /* Botones de navegación blancos */
   font-size: 1.5rem;
   background-color: rgba(233, 10, 10, 0.568);
   border: none;
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -161,10 +161,10 @@
   justify-content: end;
 
   .p-carousel-indicator {
-    background-color: rgba(255, 255, 255, 0.5); /* Blanco semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); /* Blanco semitransparente */
     &:hover,
     &.p-highlight {
-      background-color: white;
+      background-color: rgb(0, 0, 0);
     }
   }
 }
