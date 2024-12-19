@@ -44,3 +44,14 @@
     </div>
   </ng-template>
 </p-carousel>
+
+<div class="gallery">
+  <p-carousel [value]="images" [numVisible]="1" [numScroll]="1" [responsiveOptions]="responsiveOptions" 
+              [circular]="true" [autoplay]="true" [autoplayInterval]="2000">
+      <ng-template pTemplate="item" let-item>
+          <div class="gallery-item">
+              <img [src]="item" alt="Huskyes" />
+          </div>
+      </ng-template>
+  </p-carousel>
+</div>

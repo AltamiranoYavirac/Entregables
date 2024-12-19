@@ -6,6 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./Deber5.component.scss']
 })
 export class Deber5Component {
+    
+  images: string[] = [
+    'https://www.hola.com/horizon/landscape/2ba9dcaea342-husky-t.jpg',
+    'https://s1.1zoom.me/b6055/224/Dogs_Husky_536350_1920x1080.jpg',
+    'https://s1.1zoom.me/big3/281/355986-admin.jpg',
+    'https://preview.redd.it/d8c3eo60f8w41.jpg?auto=webp&s=567b5f28bc8f0e5f6dd5aa34a28269277c9cad3a',
+    'https://s1.1zoom.me/b6055/224/Dogs_Husky_536350_1920x1080.jpg',
+    'https://wallpapers.com/images/featured/imagenes-de-siberian-husky-wfvbmdimwno8ruq6.jpg'
+  ];
+
+
   // Lista de productos
   products = [
     { 
